@@ -1,0 +1,78 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html>\
+<head>\
+    <title>For Uy\'ean Nhi \uc0\u55356 \u57218 \u55357 \u56470 </title>\
+    <style>\
+        body \{\
+            margin: 0;\
+            background: linear-gradient(to top, #ff9a9e, #fad0c4);\
+            display: flex;\
+            justify-content: center;\
+            align-items: center;\
+            height: 100vh;\
+            font-family: Arial;\
+            overflow: hidden;\
+        \}\
+\
+        button \{\
+            padding: 20px 30px;\
+            font-size: 20px;\
+            border: none;\
+            border-radius: 15px;\
+            background: white;\
+            cursor: pointer;\
+        \}\
+\
+        h1 \{\
+            position: absolute;\
+            top: 20%;\
+            color: white;\
+            text-align: center;\
+        \}\
+\
+        .heart \{\
+            position: absolute;\
+            color: red;\
+            font-size: 20px;\
+            animation: float 3s linear forwards;\
+        \}\
+\
+        @keyframes float \{\
+            0% \{ transform: translateY(0); opacity: 1; \}\
+            100% \{ transform: translateY(-600px); opacity: 0; \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+\
+<h1 id="text"></h1>\
+<button onclick="showLove()">Click me \uc0\u55356 \u57217 </button>\
+\
+<script>\
+function showLove() \{\
+    document.getElementById("text").innerHTML = "Happy Uy\'ean Nhi's Birthday \uc0\u55356 \u57218 \u55357 \u56470 ";\
+\
+    for (let i = 0; i < 40; i++) \{\
+        let heart = document.createElement("div");\
+        heart.innerHTML = "\uc0\u10084 \u65039 ";\
+        heart.className = "heart";\
+        heart.style.left = Math.random() * 100 + "vw";\
+        heart.style.top = "100vh";\
+        document.body.appendChild(heart);\
+\
+        setTimeout(() => \{\
+            heart.remove();\
+        \}, 3000);\
+    \}\
+\}\
+</script>\
+\
+</body>\
+</html>}
